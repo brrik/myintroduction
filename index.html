@@ -1,25 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-<head> <!--設定部分-->
+<html lang="jp">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>MyFirstHTML</title>
+    <title>Hello, World.</title>
+    <script src="script.js"></script>
 </head>
-<body>  <!--実際に目に見える部分-->
-    <h1>Hello, World.</h1>
-    <h2>Hello, World.</h2>
-    <ul>
-        <li>ホゲータ</li>
-        <li>ニャオハ</li>
-        <li>クワッス</li>
-    </ul>
-    <ol>
-        <li>ガチエリア</li>
-        <li>ガチヤグラ</li>
-        <li>ガチホコ</li>
-        <li>ガチアサリ</li>
-    </ol>
+<body>
+    <div id="MainDiv">
+        <h1>Hello, World!</h1>
+        <div id="generalInfo">
+            <h1>General Information</h1>
+            <img id="myPhoto" src="myPhoto.JPG" alt="It's Me">
+            <table>
+                <tr>
+                    <th>Column</th>
+                    <th>Data</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>Shota ONISHI</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>Birthday</td>
+                    <td>July 7</td>
+                </tr>
+                    <td>Comes From</td>
+                    <td>Osaka</td>
+                </tr>
+            </table>
+        </div>
+        <div id="skillInfo">
+            <h1>Skills</h1>
+            <p class="title">Python</p>
+            <p>とくに仕事で使ってるわけでもないのに、Pythonで<span class="imp">Webスクレイピング</span>や<span class="imp">画像分析</span>、<span class="imp">言語分析</span>までできるようになった。なぜできるのかは不明。</p>
+            
+            <p class="title">Front End<br>(HTML,CSS,JavaScript)</p>
+            <p>こっちは仕事でちょっと必要になって、<span class="imp">半年くらいで習得</span>。気合いでいろいろやった結果、社内メンバーが利用するホームページに<span class="imp">ゲームを仕込む暴挙</span>に。</p>
+            
+            <p class="title">English</p>
+            <p>最大の長所。<span class="imp">TOEIC860</span>という「どちらかというとすごい」レベル。最近いろいろあってお客様との会議(<span class="imp">英語</span>)の進行を任されて四苦八苦。</p>
+        </div>
+        <div id="dcInfo">
+            <h1>What is DATA CENTER?</h1>
+            <p><span class="imp">データセンター</span>とは、大量のデータを保管するための施設のことです。コンピューターやサーバーなどの機器を集め、冷却設備や電源設備などを整備して、データを安全に管理します。企業や組織などが運営しており、オンラインサービスやシステム、クラウドストレージなどのインフラストラクチャーとして重要な役割を担っています。</p>
+            <p>データセンターには数々の設備が搭載されてお</p>
+        </div>
+    </div>
+    <div id="ErrDiv">
+        <h1>404 Not Found</h1>
+        <p>This Error may be caused by Server down, Network Error, or any other Critical incident.</p>
+        <p>To fix and restore this problem, please contact the website owner.</p>
+    </div>
 </body>
 </html>
