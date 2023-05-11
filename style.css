@@ -1,3 +1,52 @@
-h1{
-  color:red;
+body{
+    text-align: center;
+}
+
+img{
+    width: 80%;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.imp{
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+#generalInfo{
+    border: solid 3px black;
+    padding: 5%;
+}
+
+#generalInfo table{
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+}
+
+#generalInfo td{
+    border-bottom: solid 3px black;
+}
+
+#skillInfo, #dcInfo{
+    width: 70%;
+    margin: auto;
+}
+
+#skillInfo p, #dcInfo p{
+    text-align: left;
+}
+
+#ErrDiv{
+    display: none;
+}
+
+#MainDiv{
+    display:block;
 }
