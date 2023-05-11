@@ -1,4 +1,4 @@
-let positionTop     = 0;
+let positionTop = 0;
 
 window.addEventListener("scroll",(e) =>{
     positionTop  = window.scrollY;
