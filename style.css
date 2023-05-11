@@ -29,6 +29,7 @@ img{
     border-collapse: collapse;
     width: 60%;
     margin: auto;
+    margin-bottom: 20px;
 }
 
 #generalInfo td{
