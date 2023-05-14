@@ -1,4 +1,4 @@
-const scrollHeight = document.getElementById("MainDiv").offsetHeight+30;
+const scrollHeight = document.getElementById("MainDiv").offsetHeight;
 const pageMostBottom = scrollHeight - window.innerHeight;
 console.log(scrollHeight)
 console.log(pageMostBottom)
