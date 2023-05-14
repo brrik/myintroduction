@@ -1,15 +1,26 @@
+:root{
+    --titleSize:40px;
+    --txtSize:20px;
+    --tblSize:30px;
+}
 
 body{
     text-align: center;
+    margin:3px;
+    padding:0;
 }
 
 img{
     width: 80%;
 }
 
+p{
+    font-size: var(--txtSize);
+}
+
 .title{
     font-weight: bold;
-    font-size: 20px;
+    font-size: var(--titleSize);
 }
 
 .imp{
@@ -18,28 +29,44 @@ img{
     text-decoration: underline;
 }
 
+
+
 #generalInfo{
     border: solid 3px black;
     padding: 5%;
 }
 
-#generalInfo table{
+table{
     border-collapse: collapse;
-    width: 60%;
+    width: 80%;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-#generalInfo td{
+th{
     border-bottom: solid 3px black;
 }
 
-#skillInfo, #dcInfo{
-    width: 70%;
+td{
+    border-bottom: solid 3px black;
+    font-size: var(--tblSize);
+}
+
+.wordInfo{
+    width: 80%;
     margin: auto;
 }
 
-#skillInfo p, #dcInfo p{
+.wordInfo p{
+    text-align: left;
+}
+
+.shortCol{
+    width: 150px;
+}
+
+.carrerCol{
     text-align: left;
 }
 
@@ -49,4 +76,45 @@ img{
 
 #MainDiv{
     display:block;
+}
+
+#errorMsg{
+    background-color:yellow;
+    font-weight: bolder;
+}
+
+
+@media screen and (max-width: 959px) {
+    :root{
+        --titleSize:30px;
+        --txtSize:20px;
+        --tblSize:20px;
+    }
+
+    table{
+        width: 80%;
+    }
+
+    .wordInfo{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 480px) {
+
+
+    :root{
+        --titleSize:30px;
+        --txtSize:15px;
+        --tblSize:15px;
+    }
+
+    table{
+        width: 100%;
+        margin: 0;
+    }
+
+    .wordInfo{
+        width: 100%;
+        margin: 0;
+    }
 }
