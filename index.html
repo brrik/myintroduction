@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Hello, World.</title>
-    <script src="./script.js"></script>
 </head>
 <body>
     <div id="MainDiv">
-        
         <h1>Hello, World!</h1>
         <div id="generalInfo">
             <h1>General Information</h1>
+            
             <table>
                 <tr>
                     <th>Column</th>
@@ -21,7 +20,7 @@
                 </tr>
                 <tr>
                     <td>Name</td>
-                    <td>大西 翔大<br>ONISHI Shota</td>
+                    <td>Shota ONISHI</td>
                 </tr>
                 <tr>
                     <td>Age</td>
@@ -35,9 +34,9 @@
                     <td>Osaka</td>
                 </tr>
             </table>
-            <img id="myPhoto" src="./myPhoto.JPG" alt="It's Me">
+            <img id="myPhoto" src="myPhoto.JPG" alt="It's Me">
         </div>
-        <div id="skillInfo">
+        <div class="wordInfo">
             <h1>Skills</h1>
             <p class="title">Python</p>
             <p>とくに仕事で使ってるわけでもないのに、Pythonで<span class="imp">Webスクレイピング</span>や<span class="imp">画像分析</span>、<span class="imp">言語分析</span>までできるようになった。なぜできるのかは不明。</p>
@@ -48,16 +47,54 @@
             <p class="title">English</p>
             <p>最大の長所。<span class="imp">TOEIC860</span>という「どちらかというとすごい」レベル。最近いろいろあってお客様との会議(<span class="imp">英語</span>)の進行を任されて四苦八苦。</p>
         </div>
-        <div id="dcInfo">
+        <div class="wordInfo">
+            <h1>Hobby</h1>
+            <p class="title">Video Games</p>
+            <p>ゲーム大好き。雑食。スプラやモンハン、FFXIVなどなど多岐にわたるゲームをやっています。</p>
+
+            <p class="title">Dance</p>
+            <p>じつはこう見えて15年モノのダンサー。いろいろやってきたけど結局Popしか勝たん。</p>
+
+            <p class="title">Programming</p>
+            <p>プログラミングも趣味の範囲。実務では使いませんがPythonやJavaScriptでWebアプリ開発も。<br>最近はiPhoneアプリのSwiftにおネツ。</p>
+        </div>
+        <div class="wordInfo">
+            <h1>Career</h1>
+            <table>
+                <tr>
+                    <th class="shortCol">年</th>
+                    <th >経歴</th>
+                </tr>
+                <tr>
+                    <td>2017年</td>
+                    <td class="carrerCol">個別指導塾の教室長に就任</td>
+                </tr>
+                <tr>
+                    <td>2019年</td>
+                    <td class="carrerCol">夏期講習でバカみたいに生徒数を伸ばす。結果、帰られなくなり教室に寝泊まり。</td>
+                </tr>
+                <tr>
+                    <td>2020年</td>
+                    <td class="carrerCol">塾がブラックすぎて辞める。IT系に転職し、今のデータセンターに入場。</td>
+                </tr>
+                <tr>
+                    <td>2022年</td>
+                    <td class="carrerCol">紆余曲折を経てKCCTに転職、今に至る</td>
+                </tr>
+            </table>
+        </div>
+        <div class="wordInfo">
             <h1>What is DATA CENTER?</h1>
             <p><span class="imp">データセンター</span>とは、大量のデータを保管するための施設のことです。コンピューターやサーバーなどの機器を集め、冷却設備や電源設備などを整備して、データを安全に管理します。企業や組織などが運営しており、オンラインサービスやシステム、クラウドストレージなどのインフラストラクチャーとして重要な役割を担っています。</p>
-            <p>データセンターには数々の設備が搭載されてお</p>
+            <p>データセンターには数々の設備が搭載されており、そのすべてがお客様設備を守るために備えられています。例としてはUPS、発電</p>
         </div>
     </div>
     <div id="ErrDiv">
+        <h1 id="errorMsg">!WARNING!</h1>
         <h1>404 Not Found</h1>
         <p>This Error may be caused by Server down, Network Error, or any other Critical incident.</p>
         <p>To fix and restore this problem, please contact the website owner.</p>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
