@@ -1,9 +1,12 @@
-let positionTop = 0;
+const scrollHeight = document.getElementById("MainDiv").offsetHeight+30;
+const pageMostBottom = scrollHeight - window.innerHeight;
+console.log(scrollHeight)
+console.log(pageMostBottom)
 
-window.addEventListener("scroll",(e) =>{
-    positionTop  = window.scrollY;
-    console.log(positionTop);
-    if(positionTop>1100){
+window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    console.log(scrollTop)
+    if (scrollTop >= pageMostBottom) {
         document.getElementById("MainDiv").style.display = "none";
         document.getElementById("ErrDiv").style.display = "block";
     }
