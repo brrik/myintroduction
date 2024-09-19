@@ -1,5 +1,5 @@
-const scrollHeight = document.getElementById("MainDiv").offsetHeight;
-const pageMostBottom = scrollHeight - window.innerHeight;
+const scrollHeight = document.getElementById("MainDiv").offsetHeight+30;
+const pageMostBottom = scrollHeight - window.innerHeight-20;
 let PhotoBln = false;
 
 console.log(scrollHeight)
@@ -10,13 +10,14 @@ console.log(pageMostBottom)
 window.addEventListener('scroll', () => async {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     console.log(scrollTop)
-    if (scrollTop >= 100 && PhotoBln==false){
-        PhotoBln=true;
-        addPhoto();
-    }else if (scrollTop >= pageMostBottom) {
+    if (scrollTop >= pageMostBottom) {
         document.getElementById("MainDiv").style.display = "none";
         document.getElementById("ErrDiv").style.display = "block";
+    }else if (scrollTop >= 100 && PhotoBln==false){
+        PhotoBln=true;
+        addPhoto();
     }
+
 });
 
 async function addPhoto(){
