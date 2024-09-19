@@ -7,7 +7,7 @@ console.log(pageMostBottom)
 
 
 
-window.addEventListener('scroll', async () => {
+window.addEventListener('scroll', () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     console.log(scrollTop)
     if (scrollTop >= pageMostBottom) {
