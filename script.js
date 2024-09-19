@@ -1,4 +1,4 @@
-const scrollHeight = document.getElementById("MainDiv").innerHeight;
+const scrollHeight = document.getElementById("MainDiv").offsetHeight;
 const pageMostBottom = scrollHeight - window.innerHeight;
 let PhotoBln = false;
 
@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => async {
     if (scrollTop >= 100 && PhotoBln==false){
         PhotoBln=true;
         addPhoto();
-    }else if (scrollTop >= scrollHeight) {
+    }else if (scrollTop >= pageMostBottom) {
         document.getElementById("MainDiv").style.display = "none";
         document.getElementById("ErrDiv").style.display = "block";
     }
