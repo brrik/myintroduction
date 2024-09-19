@@ -7,7 +7,7 @@ console.log(pageMostBottom)
 
 
 
-window.addEventListener('scroll', () => {
+window.addEventListener('scroll', () => async {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     console.log(scrollTop)
     if (scrollTop >= 100 && PhotoBln==false){
