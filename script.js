@@ -1,4 +1,4 @@
-const scrollHeight = document.getElementById("MainDiv").offsetHeight+30;
+const scrollHeight = document.getElementById("MainDiv").offsetHeight+60;
 const pageMostBottom = scrollHeight - window.innerHeight - 20;
 let PhotoBln = false;
 
