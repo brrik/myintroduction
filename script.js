@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => async {
     if (scrollTop >= 100 && PhotoBln==false){
         PhotoBln=true;
         addPhoto();
-    }else if (scrollTop >= pageMostBottom) {
+    }else if (scrollTop >= scrollHeight) {
         document.getElementById("MainDiv").style.display = "none";
         document.getElementById("ErrDiv").style.display = "block";
     }
