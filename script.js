@@ -19,7 +19,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-function addPhoto(){
+async function addPhoto(){
     let i = 0;
     let x = 0.0;
     let intID = 0;
@@ -37,7 +37,7 @@ function addPhoto(){
     }, 50);
 }
 
-function altShow(){
+async function altShow(){
     let i = 0;
     let x = 0.0;
     let intID = 0;
