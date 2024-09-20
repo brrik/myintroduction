@@ -1,24 +1,26 @@
 const scrollHeight = document.getElementById("MainDiv").offsetHeight+30;
 const pageMostBottom = scrollHeight - window.innerHeight-20;
-let PhotoBln = false;
 
 console.log(scrollHeight)
 console.log(pageMostBottom)
 
 
-
-window.addEventListener('scroll', () => {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    console.log(scrollTop)
-    if (scrollTop >= pageMostBottom) {
+// スクロール時にイベントを監視
+window.addEventListener('scroll', function() {
+    // ページ全体の高さ
+    const documentHeight = document.documentElement.scrollHeight - 30;
+    
+    // 現在のスクロール位置 + ウィンドウの高さ
+    const currentScroll = window.scrollY + window.innerHeight;
+    
+    // ページの最後までスクロールしたかどうかを確認
+    if (currentScroll >= documentHeight) {
+        // 関数を発火させる
         document.getElementById("MainDiv").style.display = "none";
         document.getElementById("ErrDiv").style.display = "block";
-    }else if (scrollTop >= 100 && PhotoBln==false){
-        PhotoBln=true;
-        addPhoto();
     }
-
 });
+
 
 async function addPhoto(){
     let i = 0;
@@ -52,3 +54,7 @@ async function altShow(){
         console.log(i);
     }, 50);
 }
+
+setTimeout(() => {
+    addPhoto();
+}, (5000));
